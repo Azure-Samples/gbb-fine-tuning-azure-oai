@@ -1,0 +1,11 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
+flow: ../evaluation
+data: ../../data/stock-test.jsonl
+run: backend/chat-with-data
+column_mapping:
+  groundtruth: ${data.messages}
+  prediction: ${run.outputs.function_calls}
+
+# define cloud resource
+resources:
+  compute: pf-compute

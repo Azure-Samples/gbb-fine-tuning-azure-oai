@@ -1,0 +1,34 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Flow.schema.json
+environment:
+  python_requirements_txt: requirements.txt
+inputs:
+  question:
+    type: object
+  deployment_name:
+    type: string
+  tool_description:
+    type: string
+outputs:
+  answer:
+    type: string
+    reference: ${function_calling_tool.output.answer}
+  prompt_tokens:
+    type: string
+    reference: ${function_calling_tool.output.prompt_tokens}
+  completion_tokens:
+    type: string
+    reference: ${function_calling_tool.output.completion_tokens}
+  function_calls:
+    type: string
+    reference: ${function_calling_tool.output.function_calls}
+nodes:
+- name: function_calling_tool
+  type: python
+  source:
+    type: code
+    path: function_calling_tool.py
+  inputs:
+    aoai_conn: aoai_conn
+    user_messages: ${inputs.question}
+    tool_description: ${inputs.tool_description}
+    deployment_name: ${inputs.deployment_name}

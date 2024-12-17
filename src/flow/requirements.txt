@@ -1,0 +1,4 @@
+promptflow
+promptflow[azure]
+yfinance
+pandas

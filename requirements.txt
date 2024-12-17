@@ -1,0 +1,9 @@
+promptflow
+promptflow[azure]
+promptflow-tools
+openai
+ipykernel<=6.8.0
+python-dotenv==1.0.1
+pyzmq==19.0.0
+tiktoken==0.7.0
+yfinance

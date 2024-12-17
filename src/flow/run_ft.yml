@@ -1,0 +1,10 @@
+$schema: https://azuremlschemas.azureedge.net/promptflow/latest/Run.schema.json
+flow: .
+data: ../../data/stock-test.jsonl
+column_mapping:
+  question: ${data.messages}
+  deployment_name: gpt-4o-2024-08-06-ft-function-calling
+  tool_description: short
+# define cloud resource
+resources:
+  compute: pf-compute

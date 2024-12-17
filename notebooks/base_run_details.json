@@ -1,0 +1,41 @@
+{
+    "name": "flow_variant_0_20240905_094510_009692",
+    "created_on": "2024-09-05T12:45:22.003918+00:00",
+    "status": "Completed",
+    "display_name": "flow_variant_0_20240905_094510_009692",
+    "description": null,
+    "tags": {},
+    "properties": {
+        "azureml.promptflow.inputs_mapping": "{\"question\":\"${data.messages}\",\"deployment_name\":\"gpt-4o\",\"tool_description\":\"full\"}",
+        "azureml.promptflow.runtime_name": "automatic",
+        "azureml.promptflow.disable_trace": "false",
+        "azureml.promptflow.session_id": "a3c92a3c173aa3da60b4e2e52e0651bf80d944541d2a9608",
+        "azureml.promptflow.definition_file_name": "flow.dag.yaml",
+        "azureml.promptflow.flow_lineage_id": "1812025a7957087d8d6e180492528b82f1d2e18156d1992f1d0ca2092f0a3cf6",
+        "azureml.promptflow.flow_definition_datastore_name": "workspaceblobstore",
+        "azureml.promptflow.flow_definition_blob_path": "LocalUpload/86a2dc19f79a561db1664b3085e87103/flow/flow.dag.yaml",
+        "_azureml.evaluation_run": "promptflow.BatchRun",
+        "azureml.promptflow.snapshot_id": "a663b800-bf41-4661-9431-2b1ebdcaa277",
+        "azureml.promptflow.runtime_version": "20240829.v3",
+        "_azureml.evaluate_artifacts": "[{\"path\": \"instance_results.jsonl\", \"type\": \"table\"}]",
+        "azureml.promptflow.total_tokens": "30053",
+        "azureml.promptflow.completion_tokens": "381",
+        "azureml.promptflow.prompt_tokens": "29672"
+    },
+    "creation_context": {
+        "userObjectId": "8804e7e5-875e-4baa-bae9-306b736f45e3",
+        "userPuId": "10032003290C6E29",
+        "userIdp": "https://sts.windows.net/72f988bf-86f1-41af-91ab-2d7cd011db47/",
+        "userAltSecId": "5::10032003192D8038",
+        "userIss": "https://sts.windows.net/16b3c013-d300-468d-ac64-7eda0820b6d3/",
+        "userTenantId": "16b3c013-d300-468d-ac64-7eda0820b6d3",
+        "userName": "Pablo Castano",
+        "upn": null
+    },
+    "start_time": "2024-09-05T12:45:39.846805+00:00",
+    "end_time": "2024-09-05T12:46:00.569622+00:00",
+    "duration": "00:00:20.7228171",
+    "portal_url": "https://ml.azure.com/prompts/trace/run/flow_variant_0_20240905_094510_009692/details?wsid=/subscriptions/06d043e2-5a2e-46bf-bf48-fffee525f377/resourcegroups/demobmulitple/providers/Microsoft.MachineLearningServices/workspaces/aml-demobmultiple",
+    "data": "azureml://datastores/workspaceblobstore/paths/LocalUpload/227d7cc8e412b568179221ad921677bd/stock-test.jsonl",
+    "output": "azureml://locations/northcentralus/workspaces/81fd4f06-56ce-40c2-8bfe-6605ca9004b3/data/azureml_flow_variant_0_20240905_094510_009692_output_data_flow_outputs/versions/1"
+}
