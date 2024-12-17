@@ -11,6 +11,8 @@ while maintaining accuracy.
 ## 🔧 1. Infrastructure Creation
 You can use the shell script `set_up.sh` to set up the infrastructure on Azure. To run the script, you need to have the Azure CLI installed and be logged in. You can install the Azure CLI by following the instructions [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli).
 
+Its necessary to install an extension: az extension add -n ml
+
 ```bash
  ./set_up.sh
  ```
